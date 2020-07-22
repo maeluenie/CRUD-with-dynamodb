@@ -1,0 +1,19 @@
+{
+    "TableName": "YOUR_TABLE_NAME",
+    "KeySchema": [
+      {
+        "AttributeName": "KEY_COLUMN_NAME",
+        "KeyType": "HASH"
+      }
+    ],
+    "AttributeDefinitions": [
+      {
+        "AttributeName": "KEY_COLUMN_NAME",
+        "AttributeType": "S"
+      }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+  }
